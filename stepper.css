@@ -25,7 +25,7 @@ header{
     /* column-gap: 20%; */
     /* align-items: center; */
     margin-bottom: 1rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 .one,.two,.three,.four{
@@ -40,8 +40,8 @@ header{
 .one1,.two2,.three3, .four4{
     min-width: fit-content;
 }
-.two2,.three3,.four4{
-    padding-right: 2.3rem;
+.three3,.four4{
+    padding-right: 4rem;
 }
     /* text-align: center; */
     /* align-content: center; */

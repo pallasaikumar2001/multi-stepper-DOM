@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nex = document.querySelector('.navigation button:last-child');
 
     let count = 0;
-    const stepMessages = [
+    const stageMessages = [
         'Add account details for further communication',
         'Add shipping address for successful delivery',
         'Complete the payment to complete the order',
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        stepDescription.textContent = stepMessages[count];
+        stepDescription.textContent = stageMessages[count];
         pre.disabled = count === 0;
         nex.textContent = (count === steps.length - 1) ? 'Finish' : 'Next';
         nex.disabled = count === steps.length;
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             count += 1;
             updatesteps();
         } else if (count === steps.length - 1) {
-            stepDescription.textContent = stepMessages[stepMessages.length - 1] + ' \uD83D\uDC90';
+            stepDescription.textContent = stageMessages[stageMessages.length - 1] + ' \uD83D\uDC90';
             steps[count].classList.add('completed');
             steps[count].classList.remove('active');
             stage[count].classList.remove('active');
