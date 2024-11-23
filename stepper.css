@@ -1,0 +1,109 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 3rem; */
+}
+header{
+    font-size: 200%;
+    text-align: center;
+}
+.parent1{
+    border-top: 5px solid rgb(231, 229, 229);
+    width:90%;
+    display: flex;
+    align-items: center;
+    margin: 2rem ;
+    padding-top: 2rem ;
+    justify-content: space-evenly;
+}
+
+.parent2{
+    width: 100%;
+    /* min-width: fit-content ; */
+    display: flex;
+    /* column-gap: 20%; */
+    /* align-items: center; */
+    margin-bottom: 1rem;
+    justify-content: space-around;
+
+}
+.one,.two,.three,.four{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+}
+.one1,.two2,.three3, .four4{
+    min-width: fit-content;
+}
+.two2,.three3,.four4{
+    padding-right: 2.3rem;
+}
+    /* text-align: center; */
+    /* align-content: center; */
+
+.b1,.b2,.b3{
+    height: 3px;
+    width:30%;
+    border-bottom: 2px solid black;
+    
+}
+.b11,.b12,.b13{
+    width:100%
+}
+.navigation{
+    display: flex;
+    column-gap: 3rem;
+    button{
+        margin-top: 2rem;
+        padding: 0.5rem 2rem ;
+    }
+}
+.one.active, .two.active, .three.active, .four.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.one1.active, .two2.active, .three3.active, .four4.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.one.completed, .two.completed, .three.completed, .four.completed {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    position: relative;
+}
+
+.one.completed::after, .two.completed::after, .three.completed::after, .four.completed::after {
+    content: '\2713';  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: green;
+
+    /* visibility: hidden; */
+}
+
+.b1.active, .b2.active, .b3.active, .b4.active {
+    background-color: green;
+    border-color: green;
+}
+
+.b1.completed, .b2.completed, .b3.completed, .b4.completed {
+    background-color: green;
+    border-color: green;
+}
+
+
+
+
+
